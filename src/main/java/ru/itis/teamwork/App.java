@@ -16,6 +16,7 @@ public class App extends Application {
     private static final Logger log = LoggerFactory.getLogger(App.class);
 
     private static final String MAIN_FXML_FILE = "/styles/fxml/main.fxml";
+    private static final String TEST = "/styles/fxml/mainpage.fxml";
 
     private WebSocketServer server;
 
@@ -45,7 +46,7 @@ public class App extends Application {
         FXMLLoader loader = new FXMLLoader();
         Parent rootNode = loader.load(
                 getClass().getResourceAsStream(
-                        MAIN_FXML_FILE
+                        TEST
                 )
         );
 
